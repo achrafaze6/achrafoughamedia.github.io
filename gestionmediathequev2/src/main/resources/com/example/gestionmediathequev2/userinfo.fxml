@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="backhpage" prefHeight="756.0" prefWidth="648.0" stylesheets="@hompage.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gestionmediathequev2.userinfocontroller">
+   <top>
+      <HBox opacity="0.77" prefHeight="40.0" prefWidth="1009.0" style="-fx-background-color: #000;" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="40.0" prefWidth="572.0">
+               <children>
+                  <ImageView fitHeight="27.0" fitWidth="26.0" layoutX="8.0" layoutY="10.0" onMouseClicked="#goTohome4" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/retour-icon.png" />
+                     </image>
+                  </ImageView>
+               </children></Pane>
+            <ImageView fitHeight="24.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets left="30.0" top="8.0" />
+               </HBox.margin>
+               <image>
+                  <Image url="@img/paner1.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <VBox prefHeight="645.0" prefWidth="524.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="220.0" prefWidth="648.0">
+               <children>
+                  <AnchorPane prefHeight="224.0" prefWidth="302.0">
+                     <children>
+                        <ImageView fitHeight="163.0" fitWidth="200.0" layoutX="85.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/user.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <Label prefHeight="101.0" prefWidth="129.0" text="Bonjour" textFill="WHITE">
+                     <font>
+                        <Font name="Aldhabi" size="58.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="60.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="Currnom" prefHeight="99.0" prefWidth="186.0" text="Achraf" textFill="WHITE">
+                     <font>
+                        <Font name="Aldhabi" size="58.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="60.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="78.0" prefWidth="524.0">
+               <children>
+                  <Label prefHeight="23.0" prefWidth="139.0" text="                  NOME :" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="12.0" />
+                     </font>
+                     <padding>
+                        <Insets left="10.0" top="8.0" />
+                     </padding></Label>
+                  <TextField fx:id="nomadr" disable="true" editable="false" prefHeight="35.0" prefWidth="249.0">
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Arial Black" size="15.0" />
+                     </font></TextField>
+                  <Button mnemonicParsing="false" onMouseClicked="#allownom" onMousePressed="#allownom" prefHeight="31.0" prefWidth="98.0" style="-fx-background-color: #000;" text="Modifier" textFill="#fff9f9">
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin></Button>
+                  <Button fx:id="e1" mnemonicParsing="false" onMouseClicked="#Ennom" onMousePressed="#Ennom" prefHeight="31.0" prefWidth="95.0" style="-fx-background-color: #000;" text="Enregistrer" textFill="#fff9f9">
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                  </Button>
+               </children>
+               <opaqueInsets>
+                  <Insets top="10.0" />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets top="52.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="78.0" prefWidth="524.0">
+               <children>
+                  <Label prefHeight="23.0" prefWidth="140.0" text=" PRENOM NOME :" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="12.0" />
+                     </font>
+                     <padding>
+                        <Insets left="10.0" top="8.0" />
+                     </padding>
+                  </Label>
+                  <TextField fx:id="prenomadr" disable="true" editable="false" prefHeight="35.0" prefWidth="251.0">
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Arial Black" size="15.0" />
+                     </font>
+                  </TextField>
+                  <Button mnemonicParsing="false" onMouseClicked="#allowprenom" onMouseReleased="#allowprenom" prefHeight="31.0" prefWidth="98.0" style="-fx-background-color: #000;" text="Modifier" textFill="#fff9f9">
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="e2" mnemonicParsing="false" onMouseClicked="#enprenom" onMousePressed="#enprenom" prefHeight="31.0" prefWidth="95.0" style="-fx-background-color: #000;" text="Enregistrer" textFill="#fff9f9">
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                  </Button>
+               </children>
+               <opaqueInsets>
+                  <Insets top="10.0" />
+               </opaqueInsets>
+            </HBox>
+            <HBox prefHeight="78.0" prefWidth="524.0">
+               <children>
+                  <Label prefHeight="23.0" prefWidth="142.0" text="            ADRESSE :" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="12.0" />
+                     </font>
+                     <padding>
+                        <Insets left="10.0" top="8.0" />
+                     </padding>
+                  </Label>
+                  <TextField fx:id="adressadr" disable="true" editable="false" prefHeight="35.0" prefWidth="250.0">
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Arial Black" size="15.0" />
+                     </font>
+                  </TextField>
+                  <Button mnemonicParsing="false" onMouseClicked="#allowaddress" onMousePressed="#allowaddress" prefHeight="31.0" prefWidth="98.0" style="-fx-background-color: #000;" text="Modifier" textFill="#fff9f9">
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onMouseClicked="#enaddress" onMousePressed="#enaddress" prefHeight="31.0" prefWidth="95.0" style="-fx-background-color: #000;" text="Enregistrer" textFill="#fff9f9">
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                  </Button>
+               </children>
+               <opaqueInsets>
+                  <Insets top="10.0" />
+               </opaqueInsets>
+            </HBox>
+            <HBox prefHeight="78.0" prefWidth="524.0">
+               <children>
+                  <Label prefHeight="23.0" prefWidth="141.0" text="                 EMAIL :" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="13.0" />
+                     </font>
+                     <padding>
+                        <Insets left="10.0" top="8.0" />
+                     </padding>
+                  </Label>
+                  <TextField fx:id="emailadr" disable="true" editable="false" prefHeight="35.0" prefWidth="249.0">
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Arial Black" size="15.0" />
+                     </font>
+                  </TextField>
+                  <Button mnemonicParsing="false" onMouseClicked="#allowemail" onMousePressed="#allowemail" prefHeight="31.0" prefWidth="98.0" style="-fx-background-color: #000;" text="Modifier" textFill="#fff9f9">
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onMouseClicked="#enemail" onMousePressed="#enemail" prefHeight="31.0" prefWidth="95.0" style="-fx-background-color: #000;" text="Enregistrer" textFill="#fff9f9">
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                  </Button>
+               </children>
+               <opaqueInsets>
+                  <Insets top="10.0" />
+               </opaqueInsets>
+            </HBox>
+            <HBox prefHeight="78.0" prefWidth="524.0">
+               <children>
+                  <Label prefHeight="23.0" prefWidth="140.0" text=" MOTE DE PASS :" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="13.0" />
+                     </font>
+                     <padding>
+                        <Insets left="10.0" top="8.0" />
+                     </padding>
+                  </Label>
+                  <TextField fx:id="mpassadr" disable="true" editable="false" prefHeight="35.0" prefWidth="253.0">
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Arial Black" size="15.0" />
+                     </font>
+                  </TextField>
+                  <Button mnemonicParsing="false" onMouseClicked="#allowmpass" onMouseReleased="#allowmpass" prefHeight="31.0" prefWidth="98.0" style="-fx-background-color: #000;" text="Modifier" textFill="#fff9f9">
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onMouseClicked="#enmpass" onMousePressed="#enmpass" prefHeight="31.0" prefWidth="95.0" style="-fx-background-color: #000;" text="Enregistrer" textFill="#fff9f9">
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                  </Button>
+               </children>
+               <opaqueInsets>
+                  <Insets top="10.0" />
+               </opaqueInsets>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

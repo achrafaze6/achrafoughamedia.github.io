@@ -1,0 +1,38 @@
+.Button{
+    -fx-background-color: #8F1627;
+}
+#back2{
+    -fx-background-color: #8F1627;
+}
+#nomR {
+    -fx-background-color: rgba(122, 14, 31, 0.84);
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-background-radius: 0;
+}
+#nomR:focused {
+    -fx-background-color: rgba(122, 14, 31, 0.84),rgba(122, 14, 31, 0.84); ;
+}
+#prenomR {
+    -fx-background-color: rgba(122, 14, 31, 0.84);
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-background-radius: 0;
+}
+input:focused {
+    -fx-background-color: rgba(122, 14, 31, 0.84);
+}
+#emailR {
+    -fx-background-color: rgba(122, 14, 31, 0.84);
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-background-radius: 0;
+}
+#emailR:focused {
+    -fx-background-color: rgba(122, 14, 31, 0.84);
+}
+#mpassR {
+    -fx-background-color: rgba(122, 14, 31, 0.84);
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-background-radius: 0;
+}
+#mpassR:focused {
+    -fx-background-color: rgba(122, 14, 31, 0.84);
+}

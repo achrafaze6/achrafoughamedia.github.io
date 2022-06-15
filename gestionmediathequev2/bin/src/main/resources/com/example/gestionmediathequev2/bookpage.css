@@ -1,0 +1,10 @@
+#backhpage{
+    -fx-background-image: url(img/backhpage.png);
+}
+.scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+#hbx1:hover{
+    -fx-background-color: #000;
+    -fx-opacity: 20px;
+}

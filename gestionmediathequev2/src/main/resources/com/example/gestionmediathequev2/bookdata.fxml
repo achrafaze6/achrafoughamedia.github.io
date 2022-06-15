@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="44.0" prefWidth="828.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gestionmediathequev2.bkrowcontroller">
+   <children>
+      <Pane layoutY="-2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="46.0" prefWidth="828.0">
+         <children>
+            <HBox layoutX="2.0" prefHeight="45.0" prefWidth="825.0" style="-fx-background-color: #e8e8e8;">
+               <children>
+                  <Label fx:id="id1" onKeyPressed="#getacteur" onMouseClicked="#getacteur" prefHeight="45.0" prefWidth="67.0" style="-fx-background-color: #e8e8e8;" text="id">
+                     <font>
+                        <Font name="Arial" size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="2.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="nfilm1" prefHeight="45.0" prefWidth="162.0" style="-fx-background-color: #e8e8e8;" text="d" wrapText="true">
+                     <font>
+                        <Font name="Arial" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="npro1" prefHeight="45.0" prefWidth="152.0" style="-fx-background-color: #e8e8e8;" text="Producteur hjhhjhhjhjhj" wrapText="true">
+                     <font>
+                        <Font name="Arial" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="nrea1" prefHeight="44.0" prefWidth="142.0" style="-fx-background-color: #e8e8e8;" text="Realisateur" wrapText="true">
+                     <font>
+                        <Font name="Arial" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="editeur11" prefHeight="45.0" prefWidth="121.0" style="-fx-background-color: #e8e8e8;" text="Realisateur" wrapText="true">
+                     <font>
+                        <Font name="Arial" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="38.0" prefWidth="0.0" style="-fx-background-color: #e8e8e8;">
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="34.0" fitWidth="30.0" onKeyPressed="#deletfilm" onMouseClicked="#deletfilm" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/download-icon-trash-131964785035492366_512.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="50.0" top="6.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+   </children>
+</Pane>

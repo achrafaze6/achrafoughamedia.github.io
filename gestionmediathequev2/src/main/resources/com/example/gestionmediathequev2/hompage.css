@@ -1,0 +1,19 @@
+#backhpage{
+    -fx-background-image: url(img/backhpage.png);
+}
+#serchb1{
+
+    -fx-background-color: transparent;
+    -fx-outline:#fff;
+    -fx-opacity: 10px;
+}
+#serchb1:focused{
+    -fx-background-color: transparent;
+    -fx-fill: red;
+
+    -fx-background-color: #fff;
+    -fx-fill-color:#fff;
+    -fx-margin-top:2px;
+    -fx-outline:#fff;
+
+}

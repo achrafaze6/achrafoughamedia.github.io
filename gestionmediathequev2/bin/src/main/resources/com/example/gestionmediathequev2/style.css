@@ -1,0 +1,46 @@
+
+#btnconnect{
+    -fx-background-color: rgba(122, 14, 31, 0.84);
+}
+#btnR{
+    -fx-background-color: rgba(122, 14, 31, 0.84);
+}
+.Button{
+    -fx-background-color: rgba(122, 14, 31, 0.84);
+}
+#back1{
+    -fx-background-color: #8F1627;
+}
+* {
+    -fx-primary-color: #007acc;
+    -fx-secondary-color: #4B6EAF;
+    -fx-grey-color: #b9b9b9;
+
+    -fx-focus-color: -fx-secondary-color;
+}
+#Adresse1{
+    -fx-text-fill:#fff;
+    -fx-accent: #98001d;
+    -fx-background-color: rgba(122, 14, 31, 0.84);
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-background-radius: 0;
+}
+#input1 {
+    -fx-text-fill:#fff;
+    -fx-accent: #98001d;
+    -fx-background-color: rgba(122, 14, 31, 0.84);
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-background-radius: 0;
+}
+#input1:focused {
+    -fx-background-color: rgba(122, 14, 31, 0.84);
+}
+#input2 {
+    -fx-text-fill:#fff;
+    -fx-background-color: rgba(122, 14, 31, 0.84);
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-background-radius: 0;
+}
+#input2:focused {
+    -fx-background-color: rgba(122, 14, 31, 0.84);
+}

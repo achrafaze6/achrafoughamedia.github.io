@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="46.0" prefWidth="608.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gestionmediathequev2.Acteurrowcontroller">
+   <children>
+      <HBox layoutX="2.0" prefHeight="45.0" prefWidth="608.0" style="-fx-background-color: #e8e8e8;">
+         <children>
+            <Label fx:id="idacteur" onKeyPressed="#getacteur" onMouseClicked="#getacteur" prefHeight="45.0" prefWidth="97.0" style="-fx-background-color: #e8e8e8;" text="idacteur">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="2.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <Label fx:id="nomacteur" prefHeight="45.0" prefWidth="147.0" style="-fx-background-color: #e8e8e8;" text="d" wrapText="true">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="prenoomacteur" prefHeight="45.0" prefWidth="173.0" style="-fx-background-color: #e8e8e8;" text="jjjjj" wrapText="true">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font>
+            </Label>
+            <Label prefHeight="38.0" prefWidth="0.0" style="-fx-background-color: #e8e8e8;">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="34.0" fitWidth="30.0" onKeyPressed="#deleacteur" onMouseClicked="#deleacteur" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/download-icon-trash-131964785035492366_512.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+      </HBox>
+   </children>
+</Pane>

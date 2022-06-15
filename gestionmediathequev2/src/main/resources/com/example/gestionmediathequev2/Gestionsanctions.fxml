@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="backhpage" prefHeight="744.0" prefWidth="810.0" stylesheets="@hompage.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gestionmediathequev2.Sanctioncontroller">
+   <top>
+      <HBox opacity="0.98" prefHeight="40.0" prefWidth="1009.0" style="-fx-background-color: #000;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="20.0" prefWidth="290.0">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+               <children>
+                  <ImageView fitHeight="20.0" fitWidth="25.0" onMouseClicked="#backtohom" onMousePressed="#backtohom" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/retour-icon.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+            </HBox>
+            <Pane prefHeight="40.0" prefWidth="669.0">
+               <children>
+                  <Label layoutX="147.0" layoutY="12.0" prefHeight="17.0" prefWidth="75.0" text="DVD" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <VBox prefHeight="682.0" prefWidth="1009.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="55.0" prefWidth="810.0" style="-fx-background-color: #e8e8e8;">
+               <children>
+                  <Label prefHeight="29.0" prefWidth="76.0" style="-fx-background-color: #e8e8e8;" text=" Id">
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label prefHeight="29.0" prefWidth="117.0" style="-fx-background-color: #e8e8e8;" text="Nom ">
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="29.0" prefWidth="134.0" style="-fx-background-color: #e8e8e8;" text="Prenom">
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="29.0" prefWidth="187.0" style="-fx-background-color: #e8e8e8;" text="Montan a payer">
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="29.0" prefWidth="173.0" style="-fx-background-color: #e8e8e8;" text="Regler">
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="29.0" prefWidth="134.0" style="-fx-background-color: #e8e8e8;" text=" ">
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <ScrollPane prefHeight="167.0" prefWidth="810.0" style="-fx-background-color: #e8e8e8;" stylesheets="@filmpage.css">
+               <content>
+                  <VBox fx:id="tablefcn" prefHeight="161.0" prefWidth="803.0" />
+               </content>
+            </ScrollPane>
+            <AnchorPane prefHeight="36.0" prefWidth="810.0" style="-fx-background-color: #000;">
+               <children>
+                  <Label layoutX="368.0" layoutY="9.0" prefHeight="17.0" prefWidth="75.0" text="Livre" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <HBox prefHeight="37.0" prefWidth="817.0" style="-fx-background-color: #e8e8e8;">
+               <children>
+                  <Label prefHeight="29.0" prefWidth="90.0" style="-fx-background-color: #e8e8e8;" text=" Id">
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label prefHeight="29.0" prefWidth="125.0" style="-fx-background-color: #e8e8e8;" text="Nom ">
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="29.0" prefWidth="131.0" style="-fx-background-color: #e8e8e8;" text="Prenom">
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="29.0" prefWidth="180.0" style="-fx-background-color: #e8e8e8;" text="Montan a payer">
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="29.0" prefWidth="144.0" style="-fx-background-color: #e8e8e8;" text="Regler">
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="29.0" prefWidth="144.0" style="-fx-background-color: #e8e8e8;" text="    Modifier">
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <ScrollPane prefHeight="161.0" prefWidth="810.0" style="-fx-background-color: #e8e8e8;" stylesheets="@filmpage.css">
+               <content>
+                  <VBox fx:id="tablefcn1" prefHeight="174.0" prefWidth="794.0" />
+               </content>
+            </ScrollPane>
+            <AnchorPane prefHeight="35.0" prefWidth="810.0" style="-fx-background-color: #000;">
+               <children>
+                  <Label layoutX="374.0" layoutY="6.0" prefHeight="17.0" prefWidth="75.0" text="CD" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <HBox prefHeight="42.0" prefWidth="810.0" style="-fx-background-color: #e8e8e8;">
+               <children>
+                  <Label prefHeight="29.0" prefWidth="76.0" style="-fx-background-color: #e8e8e8;" text=" Id">
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label prefHeight="29.0" prefWidth="117.0" style="-fx-background-color: #e8e8e8;" text="Nom ">
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="29.0" prefWidth="136.0" style="-fx-background-color: #e8e8e8;" text="Prenom">
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="29.0" prefWidth="180.0" style="-fx-background-color: #e8e8e8;" text="Montan a payer">
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="29.0" prefWidth="144.0" style="-fx-background-color: #e8e8e8;" text="Regler">
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="29.0" prefWidth="144.0" style="-fx-background-color: #e8e8e8;" text="    Modifier">
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <ScrollPane prefHeight="178.0" prefWidth="810.0" style="-fx-background-color: #e8e8e8;" stylesheets="@filmpage.css">
+               <content>
+                  <VBox fx:id="tablefcn11" prefHeight="207.0" prefWidth="795.0" />
+               </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

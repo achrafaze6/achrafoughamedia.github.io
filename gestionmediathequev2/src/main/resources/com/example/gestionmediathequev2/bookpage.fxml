@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="backhpage" prefHeight="762.0" prefWidth="1009.0" stylesheets="@hompage.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gestionmediathequev2.livrepage">
+   <top>
+      <HBox opacity="0.77" prefHeight="40.0" prefWidth="1009.0" style="-fx-background-color: #000;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="20.0" prefWidth="290.0">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </HBox>
+            <Pane prefHeight="40.0" prefWidth="611.0" />
+         </children>
+      </HBox>
+   </top>
+   <left>
+      <VBox opacity="0.77" prefHeight="722.0" prefWidth="192.0" style="-fx-background-color: #000;" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="191.0" prefWidth="140.0">
+               <VBox.margin>
+                  <Insets top="250.0" />
+               </VBox.margin>
+               <children>
+                  <HBox onMouseClicked="#goTohome4" onMousePressed="#goTohome4" prefHeight="50.0" prefWidth="140.0">
+                     <children>
+                        <Pane prefHeight="49.0" prefWidth="6.0" />
+                        <ImageView fitHeight="27.0" fitWidth="29.0" onMouseClicked="#goTohome4" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/hpage1.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="10.0" top="5.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label text="Accuille" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets left="8.0" top="12.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Arial Bold" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox onMouseClicked="#gotofilmeage4" onMousePressed="#gotofilmeage4" prefHeight="48.0" prefWidth="140.0">
+                     <children>
+                        <Pane prefHeight="47.0" prefWidth="7.0" />
+                        <ImageView fitHeight="27.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/video.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="10.0" top="5.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label text="Filmes" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets left="8.0" top="12.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Arial Bold" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox onMouseClicked="#gotoaudio4" onMousePressed="#gotoaudio4" prefHeight="48.0" prefWidth="140.0">
+                     <children>
+                        <Pane prefHeight="48.0" prefWidth="9.0" />
+                        <ImageView fitHeight="27.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/audiop1.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="10.0" top="5.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label text="Audio" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets left="8.0" top="12.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Arial Bold" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="47.0" prefWidth="140.0">
+                     <children>
+                        <Pane prefHeight="47.0" prefWidth="8.0" style="-fx-background-color: #fff;" />
+                        <ImageView fitHeight="27.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/book1.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="10.0" top="9.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label text="Livres" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets left="8.0" top="13.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Arial Bold" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <HBox prefHeight="30.0" prefWidth="106.0">
+               <children>
+                  <Pane prefHeight="38.0" prefWidth="10.0" />
+               </children>
+               <VBox.margin>
+                  <Insets top="245.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <VBox prefHeight="673.0" prefWidth="817.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="131.0" prefWidth="817.0" style="-fx-text-alignment: center;" text="                        Livres" textFill="WHITE">
+               <font>
+                  <Font name="Cambria Bold" size="58.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="50.0" top="199.0" />
+               </VBox.margin>
+            </Label>
+            <ScrollPane prefHeight="389.0" prefWidth="817.0" style="-fx-background-color: transparent;" stylesheets="@bookpage.css">
+               <content>
+                  <GridPane fx:id="grid" prefHeight="732.0" prefWidth="801.0" style="-fx-background-color: transparent;">
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" />
+                     </padding>
+                  </GridPane>
+               </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
